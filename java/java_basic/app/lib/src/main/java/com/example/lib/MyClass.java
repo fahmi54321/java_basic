@@ -8,5 +8,8 @@ public class MyClass {
 
         v1.start();
         v2.start();
+
+        v1.brake();
+        v2.brake();
     }
 }

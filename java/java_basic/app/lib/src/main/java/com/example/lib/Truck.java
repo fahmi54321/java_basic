@@ -14,4 +14,9 @@ public class Truck extends Vehicle {
     void stop() {
         System.out.println("The trucks stop");
     }
+
+    @Override
+    void brake() {
+        System.out.println("The trucks brake");
+    }
 }

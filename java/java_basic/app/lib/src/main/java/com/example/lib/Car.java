@@ -34,4 +34,9 @@ public class Car extends Vehicle{
         System.out.println("The Car stops");
 //        super.stop();
     }
+
+    @Override
+    void brake() {
+        System.out.println("The car brake");
+    }
 }
