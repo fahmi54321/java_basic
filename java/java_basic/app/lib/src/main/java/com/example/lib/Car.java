@@ -13,10 +13,6 @@ public class Car extends Vehicle{
         this.carModel = carModel;
     }
 
-//    public Car(int numberOfWheels) {
-//        super(numberOfWheels);
-//    }
-
     public Car(String carModel) {
         super(4);
 
@@ -25,5 +21,17 @@ public class Car extends Vehicle{
 
     void hunk(){
         System.out.println("Beep");
+    }
+
+    @Override
+    void start() {
+        System.out.println("The Car starts");
+//        super.start();
+    }
+
+    @Override
+    void stop() {
+        System.out.println("The Car stops");
+//        super.stop();
     }
 }
