@@ -1,6 +1,6 @@
 package com.example.lib;
 
-public class Truck extends Vehicle {
+public class Truck extends Vehicle implements VehicleInterface {
     public Truck(int numberOfWheels) {
         super(numberOfWheels);
     }
@@ -16,7 +16,22 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    void brake() {
+    public void startEngine() {
+        System.out.println("The trucks startEngine");
+    }
+
+    @Override
+    public void stopEngine() {
+        System.out.println("The trucks stopEngine");
+    }
+
+    @Override
+    public void accelerate() {
+        System.out.println("The trucks accelerate");
+    }
+
+    @Override
+    public void brake() {
         System.out.println("The trucks brake");
     }
 }

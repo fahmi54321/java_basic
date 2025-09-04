@@ -1,7 +1,7 @@
 package com.example.lib;
 
 // paren class
-public abstract class Vehicle {
+public class Vehicle {
     private int numberOfWheels;
 
     public int getNumberOfWheels() {
@@ -23,6 +23,4 @@ public abstract class Vehicle {
     void stop(){
         System.out.println("The vehicle stops");
     }
-
-    abstract void brake();
 }

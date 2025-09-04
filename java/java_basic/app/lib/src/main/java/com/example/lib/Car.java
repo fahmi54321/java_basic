@@ -1,7 +1,7 @@
 package com.example.lib;
 
 // child class
-public class Car extends Vehicle{
+public class Car extends Vehicle implements VehicleInterface{
 
     private String carModel;
 
@@ -36,7 +36,22 @@ public class Car extends Vehicle{
     }
 
     @Override
-    void brake() {
-        System.out.println("The car brake");
+    public void startEngine() {
+        System.out.println("The Car startEngine");
+    }
+
+    @Override
+    public void stopEngine() {
+        System.out.println("The Car stopEngine");
+    }
+
+    @Override
+    public void accelerate() {
+        System.out.println("The Car accelerate");
+    }
+
+    @Override
+    public void brake() {
+        System.out.println("The Car brake");
     }
 }
