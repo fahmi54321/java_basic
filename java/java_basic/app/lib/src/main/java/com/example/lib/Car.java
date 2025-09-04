@@ -1,47 +1,29 @@
 package com.example.lib;
 
-public class Car{
-    private int year;
-    private int speed;
+// child class
+public class Car extends Vehicle{
 
-    // Getters and Setters
+    private String carModel;
 
-    /**
-     * Lebih cepatnya:
-     * Mac : control + enter (pilih constructor)
-     * Windows : Alt + Insert (pilih constructor)
-     *
-     */
-    public int getYear() {
-        return year;
+    public String getCarModel() {
+        return carModel;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
     }
 
-    public int getSpeed() {
-        return speed;
+//    public Car(int numberOfWheels) {
+//        super(numberOfWheels);
+//    }
+
+    public Car(String carModel) {
+        super(4);
+
+        setCarModel(carModel);
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    void accelerate(){
-        speed += 10;
-
-        System.out.println("speed: "+getSpeed());
-    }
-
-    void brake(){
-        speed -= 5;
-        System.out.println("speed: "+getSpeed());
-    }
-
-    // constructor
-    public Car(int speed, int year){
-        setYear(year);
-        setSpeed(speed);
+    void hunk(){
+        System.out.println("Beep");
     }
 }
