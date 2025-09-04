@@ -6,8 +6,8 @@ public class MyClass {
         // object
         Car redCar = new Car(100,2024);
 
-        redCar.speed = 180;
-        redCar.year = 2025;
+        redCar.setSpeed(180);
+        redCar.setYear(2025);
 
         redCar.accelerate();
         redCar.brake();
