@@ -3,22 +3,12 @@ package com.example.lib;
 public class MyClass {
     public static void main(String[] args){
 
-        Car v1 = new Car("Bmw");
-        Truck v2 = new Truck(6);
+        Circle c = new Circle(5.0);
+        Rectangle r = new Rectangle(4.0, 6.0);
 
-        v1.start();
-        v2.start();
-
-        v1.startEngine();
-        v1.stopEngine();
-        v1.accelerate();
-        v1.brake();
-        v2.startEngine();
-        v2.stopEngine();
-        v2.accelerate();
-        v2.brake();
-
-        v1.stop();
-        v2.stop();
+        System.out.println("Circle Area: "+c.calculateArea());
+        System.out.println("Circle Perimeter: "+c.calculatePerimeter());
+        System.out.println("Rectangle Area: "+r.calculateArea());
+        System.out.println("Rectangle Perimeter: "+r.calculatePerimeter());
     }
 }
